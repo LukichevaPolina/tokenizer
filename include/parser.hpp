@@ -1,5 +1,5 @@
-#ifndef PARSER_JSON_HPP
-#define PARSER_JSON_HPP
+#ifndef PARSER_HPP
+#define PARSER_HPP
 
 #include <string>
 #include <fstream>
@@ -12,6 +12,7 @@ namespace tokenizer {
 class Parser {
 public:
     Parser(){};
+    Parser(std::string path);
     ~Parser(){};
 
     void parse_merges(std::string path);
@@ -31,4 +32,4 @@ private:
 
 } // namespace tokenizer
 
-#endif // PARSER_JSON_HPP
+#endif // PARSER_HPP

@@ -2,6 +2,11 @@
 
 namespace tokenizer {
 
+Parser::Parser(std::string path) {
+    parse_merges(path);
+    parse_vocab(path);
+}
+
 void Parser::parse_merges_from_txt(std::string path) {
     try {
         std::ifstream file(path);
