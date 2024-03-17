@@ -4,7 +4,7 @@
 
 int main() {
 
-    tokenizer::Parser parser("/home/polina/tokenizer/data/tokenizer_llama.json");
+    tokenizer::Parser parser("../data/tokenizer_llama.json");
 
     tokenizer::t_vocab vocab = parser.get_vocab();
     tokenizer::t_merges merges = parser.get_merges();
